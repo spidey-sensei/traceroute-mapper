@@ -32,8 +32,8 @@ The visualization concept is inspired by: https://stefansundin.github.io/tracero
 - Uses ICMP-based traceroute:
 traceroute -I -n destination
 
--I ensures reliability
--n disables DNS lookups
+- -I ensures reliability
+  -n disables DNS lookups
 
 2. Hop-wise Parsing
 
@@ -53,6 +53,6 @@ traceroute -I -n destination
 - Routes are connected using polylines
 - Popups show hop number, IP, and location
 
-Note: The traceroute output was parsed hop-by-hop to preserve routing structure. For hops returning multiple probe responses due to load balancing, the first publicly routable IP address was selected. Private IP addresses and non-responsive hops were filtered as they cannot be geolocated using public IP databases.
+* Note: The traceroute output was parsed hop-by-hop to preserve routing structure. For hops returning multiple probe responses due to load balancing, the first publicly routable IP address was selected. Private IP addresses and non-responsive hops were filtered as they cannot be geolocated using public IP databases.
 
 
