@@ -1,6 +1,6 @@
 # Traceroute Map Visualizer 
 
-# Requirements:
+# Requirements
 - traceroute installed
 - pip install requests folium
 
@@ -29,10 +29,10 @@ The visualization concept is inspired by: https://stefansundin.github.io/tracero
 
 1. Traceroute Execution
 
-- Uses ICMP-based traceroute:
-traceroute -I -n destination
+- Uses ICMP-based traceroute: 
+ traceroute -I -n destination
 
-- -I ensures reliability
+- -I ensures reliability;
   -n disables DNS lookups
 
 2. Hop-wise Parsing
